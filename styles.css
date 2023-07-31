@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffa07a; /* Sunset color scheme background */
+}
+
+.header {
+    text-align: left;
+    background-color: #7ad9ff34; /* Semi-transparent orange background for the header */
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header h1 {
+    margin: 0; /* Remove default margin for h1 element */
+    color: #ffffff; /* White color for the heading text */
+}
+
+.timer-container {
+    text-align: center;
+}
+
+.timer {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff; /* White color for the timer */
+}
