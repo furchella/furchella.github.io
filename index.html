@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #ffa07a; /* Sunset color scheme background */
+    }
+
+    .header {
+      text-align: left;
+      background-color: #7ad9ff34; /* Semi-transparent orange background for the header */
+      padding: 10px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .header h1 {
+      margin: 0; /* Remove default margin for h1 element */
+      color: #ffffff; /* White color for the heading text */
+    }
+
+    .timer-container {
+      text-align: center;
+    }
+
+    .timer {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #ffffff; /* White color for the timer */
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>furchella</h1>
+  </div>
+  <div class="timer-container">
+    <a href="https://vrc.group/CORBEL.6845" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><div class="timer" id="countdown"></div></a>
+  </div>
+
+  <!-- Bootstrap and Custom JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Set the target date for the countdown (provided timestamp: 1692388800)
+    const targetDate = 1692388800000; // Convert UNIX timestamp to milliseconds
+
+    // Update the countdown every second
+    const countdownInterval = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      // Calculate days, hours, minutes, and seconds
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the countdown
+      const countdownElement = document.getElementById("countdown");
+      countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+      // If the countdown is over, display a message
+      if (distance < 0) {
+        clearInterval(countdownInterval);
+        countdownElement.innerHTML = "Countdown is over!";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
