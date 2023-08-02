@@ -6,14 +6,60 @@ body {
     background-color: #ffa07a; /* Sunset color scheme background */
 }
 
-.header {
+a {
+    color: #ffffff; /* Set the text color to white */
+    text-decoration: none; /* Remove the underline from the link */
+    /* background-color: #000000; Set the background color for the link */
+    padding: 5px 10px; /* Add some padding to the link */
+    border-radius: 5px; /* Add rounded corners to the link */
+    display: inline-block; /* Make the link a block element */
+}
+
+a:hover {
+    /*background-color: #ffffff; Change the background color on hover */
+    color: #FAC196; /* Change the text color on hover */
+}
+
+/* .header {
     text-align: left;
-    background-color: #7ad9ff34; /* Semi-transparent orange background for the header */
+    background-color: #7ad9ff34; 
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+} */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    background-color: #7ad9ff34;
     padding: 10px;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.donate-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff; /* White color for button text */
+    background-color: #F09093; /* Sunset color for the button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    display:inline-block;
+    width: auto !important; 
+    height: auto !important;
+}
+
+.donate-btn:hover {
+    background-color: #FAA496; /* Change the background color on hover */
 }
 
 .header h1 {
@@ -29,4 +75,35 @@ body {
     font-size: 3rem;
     font-weight: bold;
     color: #ffffff; /* White color for the timer */
+}
+
+.donation-container {
+    text-align: center;
+    margin-top: 100px; /* Add margin-top to create space between heading and buttons */
+}
+
+.donation-container h2, h3 {
+    margin: 0; /* Remove default margin for h2 element */
+    padding-bottom: 10px;
+    color: #ffffff; /* White color for the heading text */
+}
+
+.donation-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; /* White color for button text */
+    /*background-color: #ffa500;  Sunset color for the buttons */
+    background-color: #7ad9ff34;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%; /* Set width to 100% for the buttons to stack vertically */
+}
+
+/* Style for the hover state of the .donation-btn class */
+.donation-btn:hover {
+    background-color: #FAA496; /* Change the background color on hover */
 }
