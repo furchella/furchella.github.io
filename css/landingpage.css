@@ -107,6 +107,26 @@ a:hover {
     left: 0;
 }
 
+.groupIcon {
+    /* position: relative;
+    left: 400px; */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+
+    display:block;
+    width: auto !important; 
+    height: auto !important;
+}
+
+#secret {
+    font-size: 10px;
+    text-decoration: #713aaa;
+    color: #713aaa;
+}
+
 .footer {
     display: flex;
     align-items: center;
