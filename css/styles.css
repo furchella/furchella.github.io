@@ -3,7 +3,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ffa07a; /* Sunset color scheme background */
+    background-color: #6f1194; /* Sunset color scheme background */
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 a {
@@ -13,6 +14,22 @@ a {
     padding: 5px 10px; /* Add some padding to the link */
     border-radius: 5px; /* Add rounded corners to the link */
     display: inline-block; /* Make the link a block element */
+}
+
+.furthella-text {
+    align-items: center;
+}
+
+.furchella-text-branding {
+    font-family: 'Flavors', cursive;
+    color: #ffffff;
+}
+
+.brand-tm {
+    color: #ffffff;
+    font-size: 0.6em;
+    margin-left: -10px;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 a:hover {
@@ -29,6 +46,10 @@ a:hover {
     top: 0;
     left: 0; 
 } */
+
+.footerLogo {
+    font-family: 'Flavors', cursive;
+}
 
 .header {
     display: flex;

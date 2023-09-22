@@ -53,7 +53,7 @@
                 </div> -->
                 <div class="product-item-description d-flex me-auto">
                     <div class="bg-faded p-5 rounded">
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/furchella_banner.png" alt="..." />
+                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/Furchella_popup.png" alt="..." />
                     <br>
                     <p class="m-0">Greetings, fellow furs and friends! Join us in celebrating the grand finale of summer with the spectacular music festival known as Furchella. As the sun sets on this season and we transition into the latter part of the year, we're thrilled to extend our warmest invitation. Countless hours of dedication and collaboration have culminated in the creation of Furchella, and it's with immense joy that we welcome you to our tropical island getaway, where the harmonious melodies of music take center stage. Get ready to groove to captivating rhythms, witness incredible dances, and immerse yourself in an unforgettable experience. Your enjoyment is our utmost priority, and together, let's make Furchella an extraordinary celebration of music and togetherness.</p>`   
                     <!-- <h2 class="section-heading mb-4">
@@ -131,31 +131,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        // Set the target date for the countdown (provided timestamp: 1692388800)
-        const targetDate = 1692388800000; // Convert UNIX timestamp to milliseconds
-
-        // Update the countdown every second
-        const countdownInterval = setInterval(function() {
-        const now = new Date().getTime();
-        const distance = targetDate - now;
-
-        // Calculate days, hours, minutes, and seconds
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the countdown
-        const countdownElement = document.getElementById("countdown");
-        countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-        // If the countdown is over, display a message
-        if (distance < 0) {
-            clearInterval(countdownInterval);
-            countdownElement.innerHTML = "Countdown is over!";
-        }
-        }, 1000);
-    </script>
+    <script src="./javascript/timer.js" type="text/javascript"></script>
 </body>
 </html>
