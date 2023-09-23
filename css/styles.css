@@ -44,6 +44,13 @@ a {
     font-family: 'Gloria Hallelujah', cursive;
 }
 
+.brand-tm-footer {
+    color: #ffffff;
+    font-size: 0.3em;
+    margin-left: -6px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
 a:hover {
     /*background-color: #ffffff; Change the background color on hover */
     color: var(--text-color-hover); /* Change the text color on hover */

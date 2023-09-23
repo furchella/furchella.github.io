@@ -6,11 +6,17 @@ const countdownInterval = setInterval(function() {
 const now = new Date().getTime();
 const distance = targetDate - now;
 
+const _second = 1000;
+const _minute = _second * 60;
+const _hour = _minute * 60;
+const _day = _hour *24;
+
 // Calculate days, hours, minutes, and seconds
-const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+const days = Math.floor(distance / _day);
+const hours = Math.floor((distance % _day) / _hour);
+const minutes = Math.floor((distance % _hour) / _minute);
+const seconds = Math.floor((distance % _minute) / _second);
+// const milliseconds = distance % _second;
 
 // Display the countdown
 const countdownElement = document.getElementById("countdown");
