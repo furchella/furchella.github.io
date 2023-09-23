@@ -13,26 +13,39 @@
 } */
 
 :root {
-    --body-background-color: #6f1194;
+    --body-background-color: #000000a1;
     --branding-color-primary: #7ad9ff34;
     --branding-color-secondary: #F09093; 
+    --branding-color-thirds: #6f11946c;
     --bs-border-radius: 0.375rem;
     --bs-border-radius-sm: 0.25rem;
     --bs-border-radius-lg: 0.5rem;
     --bs-border-radius-xl: 1rem;
     --bs-border-radius-2xl: 2rem;
     --bs-border-radius-pill: 50rem;
+    --background-box-shadow: rgba(0, 0, 0, 0.603);
+    --donation-btn-color: #7ad9ff34;
+    --donation-btn-color-hover: #ffffff93;
+    --text-color-hover: #000000b6;
 }
 
 
-
 body {
+    background: fixed;
+    background-image: url('../assets/img/Furchella3.png');
+    background-size: cover;
+    background-blend-mode: overlay;
+    /* box-shadow: inset 0 0 0 1000px var(--background-box-shadow); */
     display: block;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: var(--body-background-color); /* Sunset color scheme background */
+    background-color: var(--body-background-color);
     font-family: 'Gloria Hallelujah', cursive;
+}
+
+.box-shadow {
+    box-shadow: inset 0 0 0 1000px var(--background-box-shadow);
 }
 
 p {
@@ -81,7 +94,7 @@ a {
 
 a:hover {
     /*background-color: #ffffff; Change the background color on hover */
-    color: #FAC196; /* Change the text color on hover */
+    color: var(--text-color-hover); /* Change the text color on hover */
 }
 
 /* .header {
@@ -97,9 +110,10 @@ a:hover {
 .header {
     display: flex;
     align-items: center;
+    /* box-shadow: inset 0 0 0 1000px var(--background-box-shadow); */
     justify-content: space-between;
     text-align: left;
-    background-color: var(--branding-color-primary);
+    background-color: var(--branding-color-thirds);
     padding: 10px;
     width: 100%;
     position: absolute;
@@ -124,15 +138,16 @@ a:hover {
 #secret {
     font-size: 10px;
     text-decoration: #713aaa;
-    color: #713aaa;
+    color: var(--branding-color-thirds);
 }
 
 .footer {
     display: flex;
     align-items: center;
+    /* box-shadow: inset 0 0 0 1000px var(--background-box-shadow); */
     justify-content: space-between;
     text-align: left;
-    background-color: var(--branding-color-primary);
+    background-color: var(--branding-color-thirds);
     padding: 10px;
     width: 100%;
     position: absolute;
@@ -149,7 +164,7 @@ a:hover {
     font-size: 1rem;
     font-weight: bold;
     color: #ffffff; /* White color for button text */
-    background-color: var(--branding-color-secondary); /* Sunset color for the button */
+    background-color: var(--donation-btn-color); /* Sunset color for the button */
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -161,7 +176,7 @@ a:hover {
 }
 
 .donate-btn:hover {
-    background-color: #FAA496; /* Change the background color on hover */
+    background-color: var(--donation-btn-color-hover); /* Change the background color on hover */
 }
 
 .header h1 {
