@@ -137,8 +137,8 @@ a:hover {
 
 #secret {
     font-size: 10px;
-    text-decoration: #713aaa;
-    color: var(--branding-color-thirds);
+    /* text-decoration: #713aaa; */
+    color: #ffffff00;
 }
 
 .footer {
