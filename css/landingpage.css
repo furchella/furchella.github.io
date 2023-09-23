@@ -111,7 +111,7 @@ a:hover {
     display: flex;
     align-items: center;
     /* box-shadow: inset 0 0 0 1000px var(--background-box-shadow); */
-    justify-content: space-between;
+    justify-content: unset;
     text-align: left;
     background-color: var(--branding-color-thirds);
     padding: 10px;
@@ -120,6 +120,21 @@ a:hover {
     top: 0;
     left: 0;
 }
+
+.timer-section {
+    display: flex;
+    align-items: center;
+    /* box-shadow: inset 0 0 0 1000px var(--background-box-shadow); */
+    justify-content: center;
+    text-align: center;
+    background-color: var(--transparent-color);
+    padding: 10px;
+    width: fit-content;
+    position: absolute;
+    top: 0%;
+    left: 40%;
+}
+
 
 .groupIcon {
     /* position: relative;
@@ -169,11 +184,44 @@ a:hover {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    position: absolute;
+    right: 10px;
 
     display:inline-block;
     width: auto !important; 
     height: auto !important;
 }
+
+.discord-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 90px;
+
+    display:inline-block;
+    width: auto !important; 
+    height: auto !important;
+}
+
+.twitch-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 138px;
+
+    display:inline-block;
+    width: auto !important; 
+    height: auto !important;
+}
+
 
 .donate-btn:hover {
     background-color: var(--donation-btn-color-hover); /* Change the background color on hover */
