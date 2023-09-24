@@ -14,27 +14,27 @@ window.onload = function() {
         randNum = getRandomInt(1, 7)
         console.log(randNum)
         if (randNum === 1) {
-            document.body.style.backgroundImage = "url('./assets/img/random1.png')"
+            document.body.style.backgroundImage = "url('./assets/img/r1.png')"
             console.log('Image 1')
         }
         if (randNum === 2) {
-            document.body.style.backgroundImage = "url('./assets/img/random2.png')"
+            document.body.style.backgroundImage = "url('./assets/img/r2.png')"
             console.log('Image 2')
         }
         if (randNum === 3) {
-            document.body.style.backgroundImage = "url('./assets/img/random3.png')"
+            document.body.style.backgroundImage = "url('./assets/img/r3.png')"
             console.log('Image 2')
         }
         if (randNum === 4) {
-            document.body.style.backgroundImage = "url('./assets/img/random4.png')"
+            document.body.style.backgroundImage = "url('./assets/img/r4.png')"
             console.log('Image 3')
         }
         if (randNum === 5) {
-            document.body.style.backgroundImage = "url('./assets/img/random5.png')"
+            document.body.style.backgroundImage = "url('./assets/img/r5.png')"
             console.log('Image 4')
         }
         if (randNum === 6) {
-            document.body.style.backgroundImage = "url('./assets/img/random6.png')"
+            document.body.style.backgroundImage = "url('./assets/img/r6.png')"
             console.log('Image 6')
         }
         if (randNum === 7) {
