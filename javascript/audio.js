@@ -26,7 +26,7 @@
 setTimeout(function() {
     document.addEventListener('click', function() {
         // do something if the user has moved the mouse
-        window.open('https://www.youtube.com/watch?v=mcHb68f8L2Q')
+        window.open('https://youtu.be/V07lFxtJUbE')
       });
   }, 10000);
 
