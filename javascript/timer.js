@@ -20,11 +20,14 @@ const seconds = Math.floor((distance % _minute) / _second);
 
 // Display the countdown
 const countdownElement = document.getElementById("countdown");
+const countdownTimerLink = document.getElementById("timer-link")
 countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
 
 // If the countdown is over, display a message
 if (distance < 0) {
     clearInterval(countdownInterval);
     countdownElement.innerHTML = "Welcome to Furchella!";
+    countdownTimerLink.href = "https://twitch.tv/furchella"
 }
 }, 1000);
