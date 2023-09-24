@@ -25,6 +25,6 @@ countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 // If the countdown is over, display a message
 if (distance < 0) {
     clearInterval(countdownInterval);
-    countdownElement.innerHTML = "Countdown is over!";
+    countdownElement.innerHTML = "Welcome to Furchella!";
 }
 }, 1000);
