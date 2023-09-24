@@ -7,7 +7,6 @@ function getRandomInt(min, max) {
 
 
 window.onload = function() {
-
     const chance = Math.floor(Math.random() * 100)
     console.log(chance)
     if (chance === 69) {
