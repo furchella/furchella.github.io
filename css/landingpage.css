@@ -151,6 +151,11 @@ a:hover {
     height: auto !important;
 }
 
+.main-content-title {
+    text-align: center;
+    font-size: 40px;
+}
+
 #secret {
     font-size: 10px;
     /* text-decoration: #713aaa; */
