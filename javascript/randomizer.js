@@ -8,6 +8,7 @@ function getRandomInt(min, max) {
 
 window.onload = function() {
     const chance = Math.floor(Math.random() * 100)
+    const lmd = Math.floor(Math.random() * 200)
     console.log(chance)
     if (chance === 69) {
         randNum = getRandomInt(1, 7)
@@ -40,5 +41,13 @@ window.onload = function() {
             document.body.style.backgroundImage = "url('./assets/img/letmedoitforyou.png')"
             console.log('Image 7')
         }
+    }
+    console.log(lmd)
+    if (lmd === 169) {
+        let owoButton = document.getElementById("e-btn")
+        owoButton.removeAttribute("hidden")
+        setTimeout(function() {
+            owoButton.href = "https://furchella.org/letmedoitforyou"
+        }, 60000)
     }
 }
