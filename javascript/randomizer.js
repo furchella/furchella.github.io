@@ -8,7 +8,7 @@ function getRandomInt(min, max) {
 
 window.onload = function() {
     const chance = Math.floor(Math.random() * 100)
-    const lmd = Math.floor(Math.random() * 200)
+    const lmd = Math.floor(Math.random() * 400)
     console.log(chance)
     if (chance === 69) {
         randNum = getRandomInt(1, 7)
