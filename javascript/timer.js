@@ -27,7 +27,8 @@ countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 // If the countdown is over, display a message
 if (distance < 0) {
     clearInterval(countdownInterval);
-    countdownElement.innerHTML = "Welcome to Furchella!";
-    countdownTimerLink.href = "https://twitch.tv/furchella"
+    countdownElement.innerHTML = "Watch the VOD on Twitch!";
+    countdownTimerLink.href = "https://www.twitch.tv/videos/1938395163"
+    countdownElement.style.textDecoration = "underline"
 }
 }, 1000);
